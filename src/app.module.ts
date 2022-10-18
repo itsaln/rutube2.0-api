@@ -5,9 +5,9 @@ import { getTypeOrmConfig } from '@app/config/typeorm.config'
 import { AppController } from '@app/app.controller'
 import { AppService } from '@app/app.service'
 import { UserModule } from '@app/user/user.module'
-import { VideoModule } from './video/video.module';
-import { CommentModule } from './comment/comment.module';
-import { AuthModule } from './auth/auth.module';
+import { VideoModule } from '@app/video/video.module'
+import { CommentModule } from '@app/comment/comment.module'
+import { AuthModule } from '@app/auth/auth.module'
 
 @Module({
 	imports: [

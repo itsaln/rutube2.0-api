@@ -1,7 +1,6 @@
 import { Column, Entity, JoinColumn, ManyToOne, OneToMany } from 'typeorm'
 import { UserEntity } from '@app/user/user.entity'
 import { Base } from '@app/utils/base'
-import { SubscriptionEntity } from '@app/user/subscription.entity'
 import { CommentEntity } from '@app/comment/comment.entity'
 
 @Entity('Video')
@@ -31,7 +30,7 @@ export class VideoEntity extends Base {
 	thumbnailPath: string
 
 	@ManyToOne(() => UserEntity, user => user.videos)
-	@JoinColumn({name: 'user_id'})
+	@JoinColumn({ name: 'user_id' })
 	user: UserEntity
 
 	@OneToMany(() => CommentEntity, comment => comment.video)
