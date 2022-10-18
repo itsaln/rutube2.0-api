@@ -1,8 +1,12 @@
 {
   "name": "rutube2.0-server",
   "version": "0.0.1",
-  "description": "",
-  "author": "",
+  "description": "Rutube 2.0 backend part",
+  "author": {
+    "email": "itsaln23@gmail.com",
+    "name": "Aladin itsaln.uz",
+    "url": "https://itsaln.uz"
+  },
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
@@ -32,6 +36,7 @@
     "@nestjs/typeorm": "^9.0.1",
     "app-root-path": "^3.1.0",
     "bcryptjs": "^2.4.3",
+    "class-transformer": "^0.5.1",
     "class-validator": "^0.13.2",
     "passport": "^0.6.0",
     "passport-jwt": "^4.0.0",
