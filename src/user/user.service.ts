@@ -34,7 +34,7 @@ export class UserService {
 		return user
 	}
 
-	async updateProfile(id: number, dto: UserDto) {
+	async update(id: number, dto: UserDto) {
 		const user = await this.findOne(id)
 
 		const isSameUser = await this.userRepository.findOneBy({ email: dto.email })

@@ -17,10 +17,10 @@ import { AuthModule } from '@app/auth/auth.module'
 			inject: [ConfigService],
 			useFactory: getTypeOrmConfig
 		}),
+		AuthModule,
 		UserModule,
 		VideoModule,
-		CommentModule,
-		AuthModule
+		CommentModule
 	],
 	controllers: [AppController],
 	providers: [AppService]
